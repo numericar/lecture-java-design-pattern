@@ -1,0 +1,8 @@
+Introduction to Solid
+    มีความสำคัญมากกับการออกแบบระบบซอฟต์แวร์
+    โดย solid เป็นตัวย่อของหลักการออกแบบที่แตกต่างกันทั้ง 5 ประการ ได้แก่
+        1. Single responsibility principle
+        2. Open closed principle 
+        3. Liskov substitution principle
+        4. Interface Segregation principle
+        5. Dependency inversion principle
