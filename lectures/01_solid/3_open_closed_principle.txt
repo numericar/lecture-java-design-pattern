@@ -1,0 +1,12 @@
+Open Closed Principle
+    หมายถึง Software Entity (classes, modules, method, etc.)
+    ควรเปิดเพื่อขยาย และปิดเพื่อแก้ไข (Open for extension, but closed for modification)
+
+    Open for extension
+        หมายถึง จะต้องสามารถขยายความสามารถที่มีอยู่เดิม โดยที่ไม่ต้องไปยุ่งเกี่ยวกับโค้ดชุดเดิม
+
+    Closed for modification
+        หมายถึง สิ่งที่เขียนไว้ไม่ควรมีการเปลี่นแปลงอีก
+
+    เช่น เรามี class แม่ชื่อว่า Base และเราต้องการขยายหรือแก้ไขความสามารถของ class Base 
+    เราไม่ควรที่จะเข้าไปแก้ไข class Base แต่ควรสร้าง class ใหม่เพื่อขยายความสามารถโดยใช้ inheritance
