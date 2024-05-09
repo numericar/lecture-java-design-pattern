@@ -1,0 +1,2 @@
+Interface Segregation Principle
+    คลาสทุกตัวไม่ควรจะถูกบังคับให้ implement interface ในส่วนที่ตัวเองไม่ได้ใช่งาน
