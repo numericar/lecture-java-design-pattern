@@ -1,0 +1,5 @@
+Dependency Inversion Principle
+    High Level Modeul ไม่ควรขึ้นอยู่กับ Low Level Module
+    ทั้งคู่ควรขึ้นอยู่กับ abstraction ไม่ใช่ concrete
+
+ref: https://medium.com/@jaturapat/dependency-inversion-principle-คืออะไร-7cd2c7e09b57 
