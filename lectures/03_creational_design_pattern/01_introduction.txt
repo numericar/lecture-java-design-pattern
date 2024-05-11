@@ -1,0 +1,13 @@
+Creational Design Pattern
+    ทำไมเราต้องมีรูปแบบการออกแบบเพื่อสร้างวัตถุของคลาส ?
+        ในโครงการจริง วัตถุอาจต้องการความพึ่งพาจากวัตถุอื่นเพื่อสร้างมัน
+        แต่มี่ข้อกำหนดว่าสามารถมีวัตถุได้เพียงแค่ชิ้นเดียว
+    
+    design pattern ในกลุ่มนี้ได้แก่
+        - Builder
+        - Simple Factory
+        - Factory Method
+        - Prototype
+        - Singleton
+        - Abstract Factory
+        - Object Pool
