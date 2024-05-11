@@ -2,4 +2,8 @@ Dependency Inversion Principle
     High Level Modeul ไม่ควรขึ้นอยู่กับ Low Level Module
     ทั้งคู่ควรขึ้นอยู่กับ abstraction ไม่ใช่ concrete
 
+    ทำให้เราทีอิสระในการเลือกทิศทางของ dependency ไม่จำเป็นต้องไหลตาม Flow of Control
+    ลดการพึ่งพา concrete class ที่่ทำให้เราสามารถเปลี่ยนแปลง dependency ได้ยาก 
+    เพิ่มครวามยืดหยุดให้กับโปรแกรมของเรา
+
 ref: https://medium.com/@jaturapat/dependency-inversion-principle-คืออะไร-7cd2c7e09b57 

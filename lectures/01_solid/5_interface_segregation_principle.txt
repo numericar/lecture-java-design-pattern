@@ -1,2 +1,7 @@
 Interface Segregation Principle
     คลาสทุกตัวไม่ควรจะถูกบังคับให้ implement interface ในส่วนที่ตัวเองไม่ได้ใช่งาน
+
+Interface Pollution
+    เป็นการที่ class ถูกบังคับให้ implement method ขยะที่ไม่ได้ใช้จาก interface
+
+reference link: https://www.saladpuk.com/basic/solid/isp
