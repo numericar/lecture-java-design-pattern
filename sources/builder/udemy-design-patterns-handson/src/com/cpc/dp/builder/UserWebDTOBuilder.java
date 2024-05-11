@@ -40,7 +40,7 @@ public class UserWebDTOBuilder implements UserDTOBuilder {
 
 	@Override
 	public UserDTO build() {
-		this.userWebDTO = new UserWebDTO(this.firstName, this.address, this.age);
+		this.userWebDTO = new UserWebDTO(this.firstName + " " + this.lastName, this.address, this.age);
 		return this.userWebDTO;
 	}
 

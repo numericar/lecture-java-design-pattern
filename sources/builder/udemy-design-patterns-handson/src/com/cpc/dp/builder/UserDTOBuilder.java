@@ -14,9 +14,11 @@ public interface UserDTOBuilder {
 	UserDTOBuilder withBirthday(LocalDate date);
 
 	UserDTOBuilder withAddress(Address address);
+	
 	//method to "assemble" final product
 	// ส่งคืน final object ของ UserDTO
 	UserDTO build();
+	
 	//(optional) method to fetch already built object
 	// สิ่งคืนวัตถุที่ถูกสร้างแล้ว
 	UserDTO getUserDTO();
