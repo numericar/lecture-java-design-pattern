@@ -19,6 +19,10 @@ Builder Design Pattern
         - ConcreteBuilder: เป็น implement ของ builder
         - Director: คลาสที่เรียกใช้งานการสร้าง product
 
+    เราสามารุใช้งาน inner class ใน immutable class เพื่อสร้าง builder ได้
+
+    แนะนำทให้สร้างเป็นคลาสแยก เพราะจะทำให้สามารถทำงานร่วมกับ lagacy code ได้ง่ายและสามารถเขียน test ได้ง่าย
+
 
 Immutable 
     คือวัตถุที่สถานะหรือคุณสมบัติไม่สามารถเปลี่ยนแปลงได้หลังจากถูกสร้างขึ้น
