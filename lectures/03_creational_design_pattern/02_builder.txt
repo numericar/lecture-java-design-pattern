@@ -15,13 +15,22 @@ Builder Design Pattern
 
     UML Example
         - Product: วัตถุที่เราต้องการจะสร้าง
-        - Builder: คลาสที่เป็นผู้สร้างวัตถุ โดยอณุญาติให้เราระบุ arguments ในขั้นตอนนี้เพื่อสร้างวัตถุ
+        - Builder: abstract class ที่มีโครงว่าการจะสร้าง project สามารถทำอะไรได้บ้างก่อนจะ build
         - ConcreteBuilder: เป็น implement ของ builder
-        - Director: คลาสที่เรียกใช้งานการสร้าง product
+        - Director: class ที่รู้ว่าในการสร้าง object product มี step การสร้างอย่างไร
 
     เราสามารุใช้งาน inner class ใน immutable class เพื่อสร้าง builder ได้
 
     แนะนำทให้สร้างเป็นคลาสแยก เพราะจะทำให้สามารถทำงานร่วมกับ lagacy code ได้ง่ายและสามารถเขียน test ได้ง่าย
+
+    ข้อผิดพลาดของ design pattern นี้
+        ถ้าหากเราใช้รูปแบบนี้อย่างถูกต้อง มันก็จะไม่มีข้อผิดพลาดใด ๆ
+        - ไม่เหามะกับมือใหม่ เนื่องจากจำเป็นต้องใช้ method chaining ตลอด ทำให้ต้องมีความเข้าใจระดับสูง
+        - เมื่อมีการเปลี่ยนแปลงที่ concrete จะต้องมีการปรับแต่ง build method
+
+    Summary
+        เมื่อใดก็ตามที่เจอสถาณการณ์ที่ constructor รับ arguments จำนวนมาก หรือ การสร้างวัตถุ
+        นั้นจำเป็นต้องใช้หลายขั้นตอน เราสามารถใช้ builder design pattern เพื่อแก้ปัญหาดังกล่าวได้
 
 
 Immutable 
