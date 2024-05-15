@@ -1,0 +1,21 @@
+Simple Factory
+    เป็นรูปแบบการออกแบบที่มีวัตถุประสงค์เพื่อสร้างวัตถุ โดยขึ้นอยู่กับการจัดสินใจเรื่องชนิดของวัตถุที่ต้องการสร้างไว้ในที่เดียว
+    โดย simple factory ไม่นับเป็น design pattern เพราะเป็นเพียงการห่อหุ้มวัตถุ (Encapsulation)
+
+    โดยเราจะใช้ก็ต่อเมื่อเรามีมากกว่า 1 ตัวเลือกในการสร้าง instance ของวัตถุ และการเลือกตัวเลือกนั้นขึ้นอยู่กับตรรกะ
+
+    ปัญหา
+        สมมุติว่าเรามีโค้ดที่มีเงื่อนไขในการสร้างวัตถุ
+            if (input == 1) {
+                new Pudding();
+            } else if (input == 2) {
+                new Cake();
+            }
+
+    แก้ปัญหาอะไร ?
+
+    UML Example 
+        - Product เป็นคลาสที่เป็นแม่แบบให้กับ sub classes โดยอาบเป็น interface หรือ abstract
+        - ProductA, ProductB เป็น sub class ที่สืบทอด Product
+        - SimpleFactory เป็น static class โดยในคลาสจะมี static method ที่ใช้สำหรับสร้าง product
+ 
