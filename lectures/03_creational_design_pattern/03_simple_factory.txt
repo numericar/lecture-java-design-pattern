@@ -19,3 +19,7 @@ Simple Factory
         - ProductA, ProductB เป็น sub class ที่สืบทอด Product
         - SimpleFactory เป็น static class โดยในคลาสจะมี static method ที่ใช้สำหรับสร้าง product
  
+    ขั้นตอนการใช้งาน simple factory 
+        - สร้างคลาสแยกออกมาต่างหาก ซึ่งจะเป็น simple factory ของเรา
+        - ภายในคลาสจะมีวิธีการส่งคืน instance ของคลาสที่เราต้องการ
+        - โดยทั่วไป วิธีการสร้างจะใช้รูปแบบ static method พร้อมกับรับ arguments
