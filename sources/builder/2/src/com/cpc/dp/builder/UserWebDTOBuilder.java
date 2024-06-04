@@ -40,7 +40,7 @@ public class UserWebDTOBuilder implements UserDTOBuilder {
 
 	@Override
 	public UserDTO build() {
-		dto = new UserWebDTO(firstName+ " "+lastName, address, age);
+		dto = new UserWebDTO(firstName+ " " + lastName, address, age);
 		return dto;
 	}
 
