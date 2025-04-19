@@ -1,5 +1,0 @@
-Liskov Substitution Principle
-    คลาสลูกทุกตัวจะต้องสามารถทำงานแทนคลาสแม่ได้ 
-    และไม่ควรเปลี่ยนแปลงคุณสมบัติที่ต้องการของโปรแกรม
-
-reference link: https://www.saladpuk.com/basic/solid/lsp

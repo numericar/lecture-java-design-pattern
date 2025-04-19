@@ -1,6 +1,0 @@
-Single Responsibility Principle 
-    - ไม่ควรมีเหตุผลมากกว่า 1 ข้อในการเปลี่ยนแปลงคลาส
-    - คลาสควรจะมีหน้าที่การทำงานแค่อย่างเดียว โดยเมื่อใดก็ตามที่่เราออกแบบคลาสหรือโมดูล เราควรจะ
-    ให้มันดูแลสิ่งนั้นโดยเฉพาะ เช่น UserService ก็ควรจะให้จัดการกั User อย่างเดียว
-
-reference link: https://medium.com/imkrish/the-single-responsibility-principle-มันคืออะไรกันแน่-a729c9cefd44
