@@ -1,0 +1,16 @@
+Open Closed Principle
+    ซอฟแวร์ควรจะเปิดสำหรับการขยายความสาามารถ แต่ปิดสำหรับการเปลี่ยนแปรง
+
+    " software entities (classes, modules, method) should be open for extension, 
+    but closed for modification "
+
+    ตัวอย่างเช่น เรามีคลาส A ที่ถูกสร้างไว้อยู่แล้ว เราต้องการขยายความสามารถของคลาส A 
+    เราไม่ควรที่จะเข้าไปแก้ไขคลาส A (closed for modification) แต่ควรสร้างคลาส B ที่สืบทอดคลาส A มาอีกที (open for extention)
+
+    class A {
+
+    }
+
+    class B extends A {
+        
+    }
