@@ -1,0 +1,22 @@
+Builder Pattern Design
+    ปัญหาของเรา คือหลายครั้ง การสร้างวัตถุขึ้นมาเป็นเรื่องยุ่งยาก เนื่องจากจำเป็นที่จะต้องสร้าง constructor ที่รับ params
+    เป็นจำนวนมากเข้ามา ทำให้มีการบวนการที่ซับซ้อนในการจะสร้างวัตถุเพียงชิ้นเดียว
+
+    example
+        class User {
+            public User(String firstName, String lastName, String role, String nickName, ...) {
+
+            }
+        }
+    
+    โดย builder pattern จะเข้ามาช่วยลดความซับซ้อนในการสร้างวัตถุให้กับเรา โดยสามารถสร้างแต่ละส่วนของวัตถุ
+    ได้อย่างง่ายดายและไม่ซับซ้อน
+
+    Chaining Method
+        เป็น method ที่จะ return object ที่มันกำลังทำงานอยู่ด้วย
+        เช่น
+            class A {
+                public A withUsername() {
+                    return this;
+                }
+            }
