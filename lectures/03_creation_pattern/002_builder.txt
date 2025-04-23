@@ -20,3 +20,11 @@ Builder Pattern Design
                     return this;
                 }
             }
+
+    แตกต่างจาก prototype อย่างไร ?
+        prototype design pattern มักจะใช้สำหรับการ copy object
+
+        โดย builder มักจะใช้จัดการกับ class ที่มี constructor ที่ซับซ้อน
+
+    ข้อผิดพลาดของ builder design pattern
+        - เป็นเรื่องยากที่จะเข้าใจเกี่ยวกับ method chaining
