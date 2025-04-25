@@ -1,0 +1,10 @@
+Simple Factory Design Pattern
+    ช่วยให้เราสามารถสร้างวัตถุได้อย่างยิดหยุ่น โดยแทนที่เราจะทำการ new object โดยตรงใน client code
+    เราจะให้ factory class ทำหน้าที่ตัดสินใจว่าจะสร้าง object แบบไหนให้เรา
+
+    ตัวอย่างชุดคำสั่ง
+        if (key.equalsIgnoreCase("pudding)) {
+            // create object pudding
+        } else if (key.equalsIgnoreCase("cake")) {
+            // create object cake
+        }
