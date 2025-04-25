@@ -1,9 +1,0 @@
-Interface Segegration Principle
-    
-    " client should not be forced to depend upon interfaces that they do not use "
-
-    " ลูกค้าไม่ควรพึ่งพา method ใน อินเทอร์เฟสที่ตัวเองไม่ได้ใช้ "
-
-    เราไม่ควรยัดวิธีการที่ไม่เกี่ยวข้องกันเอาไว้ใน interface เดียว ซึ่งจะทำให้มีขนาดใหญ่และบำรุงรักษายาก
-    และจะทำให้คลาสที่ทำการสืบทอดไป จำเป็นต้องมีการ implement วิธีการที่ต้องเองไม่ได้ใช้งาน/ไม่ได้รับผิดชอบ
-    และอาจทำให้เกิด UnsupportedOperationException()

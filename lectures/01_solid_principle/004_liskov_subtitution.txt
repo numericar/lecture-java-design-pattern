@@ -1,4 +1,0 @@
-Liskov Subtitution Principle
-    " คลาสลูกทุกตัว จะต้องสามารถทำงานแทนคลาสแม่ได้ "
-
-    อ้างอิง: https://www.saladpuk.com/basic/solid/lsp
