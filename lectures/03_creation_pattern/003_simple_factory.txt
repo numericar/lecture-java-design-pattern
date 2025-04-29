@@ -8,3 +8,15 @@ Simple Factory Design Pattern
         } else if (key.equalsIgnoreCase("cake")) {
             // create object cake
         }
+        
+	โดยปกติแล้วสามารถใช้ร่วมกับ builder pattern ได้
+	ตัวอย่าง
+		public class AFactory {
+			public static ABuilder builder() {
+				return new ABuilderImpl();
+			}
+		}
+		
+	Simple Factory vs Factory Method
+		simple factory เป็นเพียงการนำตรรกะมาห่อหุ้มวิธีการสร้างวัตถุขึ้นมา
+		factory method เป็นวิธีการสร้างคลาสย่อยจาก subclass 
